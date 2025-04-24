@@ -19,7 +19,7 @@ seed = 200
 torch.manual_seed(seed)
 diffusion = Diffusion(T=100, beta_min=1e-4, beta_max = 0.02, device = DEVICE)
 
-new_model = False; training = False # Change to True if you want train a new model
+new_model = True; training = True # Change to True if you want train a new model
 
 if not new_model:
     # Loading the trained model
